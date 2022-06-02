@@ -115,9 +115,9 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
       }
     }
 
-    min_ttl                = 0
-    default_ttl            = 3600
-    max_ttl                = 86400
+    min_ttl                = 1800
+    default_ttl            = 1800
+    max_ttl                = 1800
     compress               = true
     viewer_protocol_policy = "redirect-to-https"
   }
